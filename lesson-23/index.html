@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery 23 Lesson</title>
+</head>
+<body>
+	
+	<a href="about.html">Learn More about Me</a>
+	<br>
+	<a href="contact.html">Contact Me</a>
+	
+	<div class="wrap"></div>
+
+	<script type="text/javascript" src="jquery-2.2.2.min.js"></script>
+	<script type="text/javascript">
+		// jQuery ajax method
+		// load, getJson, get, post, getScript........
+		// This will load whole page
+		// $('body').load('about.html');
+		// This will return only container div
+		// $('a').on('click', function(){
+		// $('a').on('click', function(e){
+		// // $('nav').find('a').on('click', function(e){
+		// 	// $('body').load('about.html .container');
+		// 	// instead hard-coded value we grab the href in a variable
+		// 	var href = $(this).attr('href');
+
+		// 	// Load the content in the body
+		// 	// $('body').load(href + ' .container');
+		// 	// Load the content in the wrap div
+		// 	$('div.wrap').load(href + ' .container');
+
+		// 	// To redirect directly in about.html instead we just only load the content of the div
+		// 	e.preventDefault();
+		// });
+		// 
+		
+		(function() {
+			var wrap = $('div.wrap');
+			$('a').on('click', function(e) {
+				var href = $(this).attr('href');
+
+				wrap.load(href + ' .container');
+
+				e.preventDefault();
+			});
+		})();
+	</script>
+</body>
+</html>
