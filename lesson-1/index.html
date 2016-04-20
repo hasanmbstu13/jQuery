@@ -14,15 +14,16 @@
 		<li>hello1</li>
 		<li>hello2</li>
 	</ul>
-	<script type="text/javascript" src="jquery-2.2.2.min.js"></script>
+	<!-- <script type="text/javascript" src="jquery-2.2.2.min.js"></script> -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 	<script type="text/javascript">
 		// Using css selector to select an item & apply the css
-		// jQuery('ul li').css('color', 'green');
+		jQuery('ul li').css('color', 'green');
 		// Add a class with the element & css take care will rest
 		jQuery('ul li').addClass('emphasis');
 
-		// var lis = jQuery('ul li');
-		// console.log(lis);
+		var lis = jQuery('ul li');
+		console.log(lis);
 	</script>
 </body>
 </html>

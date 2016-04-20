@@ -9,7 +9,10 @@
 	<script type="text/javascript" src="jquery-2.2.2.min.js"></script>
 	<script type="text/javascript">
 		// More shortcut way
+		// Select the very first item of the ul
+		//  This is shorthand of using instead of document.ready method
 		$(function(){
+		// This will not work perfectly because dom is not loading yet but if placed this in bottom of the page this will work perfectly because dom is now ready to manipulate i.e we say that document is ready now u can do your actions instead we use documen.ready() method
 	 		$('li:first-child').addClass('emphasis');	
 		})
 		// $(document).ready(function(){
@@ -23,5 +26,8 @@
 		<li>hello1</li>
 		<li>hello2</li>
 	</ul>
+	<script type="text/javascript">
+		$('li:first-child').addClass('emphasis');
+	</script>
 </body>
 </html>
