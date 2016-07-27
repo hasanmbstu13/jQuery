@@ -27,7 +27,6 @@
 <div class="container">
 	<h1>Hello</h1>
 	<p>Welcome in site</p>
-	<div class="container">
 		<ul class="emphasis">
 		<!-- <ul> -->
 			<li>hello</li>
@@ -42,6 +41,19 @@
 			</li>
 		</ul>
 	</div>
+	<ul class="emphasis">
+	<!-- <ul> -->
+		<li>hello</li>
+		<li>hello1</li>
+		<li>hello1</li>
+		<li>hello1</li>
+		<li>hello1</li>
+		<li>
+			<div class="container">
+				<li>hello from the nest.</li>
+			</div>
+		</li>
+	</ul>
 </div>
 
 	<script type="text/javascript" src="jquery-2.2.2.min.js"></script>
@@ -84,6 +96,9 @@
 			// See the difference between parents & closest
 			console.log($('ul').parents('.container'));
 			console.log($('ul').closest('.container'));
+			// $('li').parents('.container').removeClass('container');
+			// Another way
+			// $('li').closest('div.container').removeClass('container');
 					
 		// })
 	</script>
